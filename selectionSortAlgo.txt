@@ -1,0 +1,15 @@
+//Sorting technique
+//Selection sort algorithm to sort in non-decreasing order
+//Complexity class O(n^2)
+
+SelectionSortAlgo(a[0...n-1], n)
+	for i <- 0 to n-2 do
+		minPos <- i
+		for j <- i+1 to n-1 do
+			if a[minPos] > a[j]
+				minPos <- j
+			end if
+		end for
+		swap(a[i], a[minPos])
+	end for
+end SelectionSortAlgo
